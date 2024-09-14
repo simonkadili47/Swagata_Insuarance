@@ -1,5 +1,6 @@
 import React, { useEffect, useRef, useState } from "react";
 import Button from "./Button";
+import image1 from '../assets/swaga3.jpg';
 
 const Hero: React.FC = () => {
   const [isVisible, setIsVisible] = useState<boolean>(false);
@@ -10,11 +11,11 @@ const Hero: React.FC = () => {
       ([entry]) => {
         if (entry.isIntersecting) {
           setIsVisible(true);
-          observer.disconnect(); // Stop observing once the element is visible
+          observer.disconnect(); 
         }
       },
       {
-        threshold: 0.1, // Adjust based on when you want the animation to trigger
+        threshold: 0.1, 
       }
     );
 
@@ -30,7 +31,7 @@ const Hero: React.FC = () => {
   }, []);
 
   return (
-    <div className="justify-between">
+    <div className="relative">
       <div className="flex flex-col md:flex-row">
         <div
           ref={heroRef}
@@ -38,7 +39,6 @@ const Hero: React.FC = () => {
             isVisible ? 'animate-fadeInDown' : ''
           }`}
         >
-          {/* Apply fade-in-down animation class conditionally */}
           <p>Taking Care of What's</p>
           <p>Important.</p>
         </div>
@@ -47,17 +47,32 @@ const Hero: React.FC = () => {
           <p>products from the ground up to both</p>
           <p>protect you and reward you.</p>
 
-          <div className="mt-6 flex ">
+          <div className="mt-6 flex">
             <Button
               label="Start free trial"
-              className="text-white px-6 bg-black py-2 border border-black"
+              className="text-white hover:border-zinc-500 px-6 bg-black py-2 border border-black"
             />
             <Button
               label="Our Study Case"
-              className="text-black px-6 py-2 ml-4 border border-black"
+              className="text-black px-6 py-2 ml-4 border border-zinc-500"
             />
           </div>
         </div>
+      </div>
+
+      {/* Images positioned with overlap */}
+      <div className="absolute top-[calc(100%)] left-0 right-0 flex gap-8 justify-center mt-[80px] ">
+        
+        <img
+          src={image1}
+          alt="Image1"
+          className="w-[40%] h-[320px] object-cover z-10"
+        />
+        <img
+          src={image1}
+          alt="Image2"
+          className="w-[40%] h-[320px] object-cover z-10"
+        />
       </div>
     </div>
   );
