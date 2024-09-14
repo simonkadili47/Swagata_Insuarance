@@ -32,25 +32,23 @@ const Hero: React.FC = () => {
 
   return (
     <div className="container mx-auto px-6 relative w-full">
-      <div className="w-full flex justify-between items-center">
+      <div className="flex flex-col lg:flex-row justify-between items-center mt-10">
         <div
           ref={heroRef}
-          className={`text-5xl font-semibold ${
-            isVisible ? "animate-fadeInDown" : ""
-          }`}
+          className={`text-3xl lg:text-5xl font-semibold ${isVisible ? "animate-fadeInDown" : ""}`}
         >
           <p>Taking Care of What's</p>
           <p>Important.</p>
         </div>
-        <div className="">
-          <p>We've built our life and business insurance</p>
-          <p>products from the ground up to both</p>
-          <p>protect you and reward you.</p>
+        <div className="text-center lg:text-left mt-6 lg:mt-0">
+          <p className="text-base lg:text-lg mb-2">We've built our life and business insurance</p>
+          <p className="text-base lg:text-lg mb-4">products from the ground up to both</p>
+          <p className="text-base lg:text-lg mb-6">protect you and reward you.</p>
 
-          <div className="mt-6 flex gap-4">
+          <div className="flex flex-col lg:flex-row gap-4">
             <Button
               label="Start free trial"
-              className="text-white text-sm px-6 bg-black py-2 border border-black hover:bg-white hover:text-black hover:border-black duration-300"
+              className="text-white text-sm px-6 py-2 bg-black border border-black hover:bg-white hover:text-black hover:border-black duration-300"
             />
             <Button
               label="Our Study Case"
@@ -73,7 +71,7 @@ const Hero: React.FC = () => {
             src={image1}
             width={300}
             height={300}
-            alt="Image1"
+            alt="Individuals and Family"
             className="w-full h-[360px] rounded-bl-xl rounded-br-xl object-cover"
           />
         </div>
@@ -89,38 +87,39 @@ const Hero: React.FC = () => {
             src={image1}
             width={300}
             height={300}
-            alt="Image2"
+            alt="Business Protection"
             className="w-full h-[360px] rounded-bl-xl rounded-br-xl object-cover"
           />
         </div>
 
-       {/* Border line after images */}
-<div className="col-span-2 flex justify-between items-center mt-2">
-  <div className="border-t border-gray-200 w-full mx-8"></div>
-</div>
+        {/* Border line after images */}
+        <div className="col-span-2 flex justify-between items-center mt-2">
+          <div className="border-t border-gray-200 w-full mx-8"></div>
+        </div>
 
-
-        
-        <div className="mt-2 lg:col-start-1 lg:col-span-2 grid grid-cols-3 gap-6">
+        <div className="mt-4 lg:mt-6 lg:col-start-1 lg:col-span-2 grid grid-cols-1 lg:grid-cols-3 gap-6">
           <div className="p-4">
-            <div className="text-black font-bold text-3xl">
-             <p>Simpler, smarter, more</p> 
-             <p>rewarding cover.</p>
+            <div className="text-black font-bold text-xl lg:text-3xl">
+              <p>Simpler, smarter, more</p>
+              <p>rewarding cover.</p>
             </div>
           </div>
 
           <div className="p-4">
             <div className="text-gray-700">
-              <span className="text-black text-xl font-bold"> <p>We help make sure you have no gaps </p></span>
-              <p className="text-sm mt-1">Wit Swagata, you get comprehensive, not patchwork protection</p>
-             
+              <span className="text-black text-lg lg:text-xl font-bold">
+                <p>We help make sure you have no gaps</p>
+              </span>
+              <p className="text-sm mt-1">With Swagata, you get comprehensive, not patchwork protection</p>
             </div>
           </div>
 
           <div className="p-4">
             <div className="text-gray-700">
-              <span className="text-xl text-black font-bold"><p>We look out for you.</p></span>
-              <p className="text-sm mt-1">You get a proactive patner  to help prevent issues form happening in the first place</p>
+              <span className="text-lg lg:text-xl text-black font-bold">
+                <p>We look out for you.</p>
+              </span>
+              <p className="text-sm mt-1">You get a proactive partner to help prevent issues from happening in the first place</p>
             </div>
           </div>
         </div>
