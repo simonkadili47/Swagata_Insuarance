@@ -71,8 +71,8 @@ const Hero: React.FC = () => {
           </div>
           <img
             src={image1}
-            width={360}
-            height={360}
+            width={300}
+            height={300}
             alt="Image1"
             className="w-full h-[360px] rounded-bl-xl rounded-br-xl object-cover"
           />
@@ -87,8 +87,8 @@ const Hero: React.FC = () => {
           </div>
           <img
             src={image1}
-            width={360}
-            height={360}
+            width={300}
+            height={300}
             alt="Image2"
             className="w-full h-[360px] rounded-bl-xl rounded-br-xl object-cover"
           />
