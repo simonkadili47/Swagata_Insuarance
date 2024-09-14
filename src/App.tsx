@@ -4,10 +4,10 @@ import Hero from './Components/Hero';
 
 const App: React.FC = () => {
   return (
-    <div className="relative">
-      <div className="bg-custom-gray p-4 pb-52 relative">
+    <div className="">
+      <div className="bg-custom-gray pb-72">
         <Navbar />
-        <div className="mt-16">
+        <div className="w-full mt-16">
           <Hero />
         </div>
       </div>

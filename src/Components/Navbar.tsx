@@ -4,7 +4,7 @@ import { BsUmbrella } from "react-icons/bs";
 const Navbar: React.FC = () => {
   return (
     <nav className="py-4">
-      <div className="container mx-auto flex justify-between items-center px-4">
+      <div className="container mx-auto flex justify-between items-center">
         <div className="text-black font-bold text-2xl ml-5 mt-2 flex">
           <BsUmbrella className="mr-2 mt-1 text-2xl" /> Swagata
         </div>
