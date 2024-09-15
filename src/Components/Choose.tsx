@@ -3,7 +3,7 @@ import React from 'react';
 const Choose: React.FC = () => {
   return (
     <div className="container mx-auto px-6 relative w-full mt-72">
-      <div className="bg-white mb-4">
+      <div className="bg-white mb-4 pt-6">
         <div className="border-t border-gray-400 w-full"></div>
       </div>
 

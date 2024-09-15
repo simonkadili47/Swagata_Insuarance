@@ -32,7 +32,6 @@ const Hero: React.FC = () => {
 
   return (
     <div className="relative w-full">
-      {/* Gray background wrapper */}
       <div className="bg-custom-gray">
         <div className="container mx-auto px-6 py-8">
           <div className="flex flex-col lg:flex-row justify-between items-center">
@@ -93,7 +92,7 @@ const Hero: React.FC = () => {
             <div className="rounded-xl bg-white flex flex-col shadow-lg max-sm:border">
               <div className="p-4">
                 <h2 className="font-semibold text-lg pb-2">Business Protection</h2>
-                <p className="text-md text-gray-500 pb-6">
+                <p className="text-md text-gray-500  pb-6">
                   Protecting your business means staying one step ahead and helping
                   you prevent problems before they happen.
                 </p>
