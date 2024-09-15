@@ -105,11 +105,10 @@ const Hero: React.FC = () => {
         </div>
 
         {/* Border line after images */}
-        <div className="col-span-2 flex justify-between items-center ">
-          <div className="border-t border-gray-200 w-full mx-8 "></div>
+        <div className="col-span-2 mt-1 mb-[-8px]  ">
+          <div className="border border-gray-200 w-full "></div>
         </div>
 
-        {/* Moved text closer to the border */}
         <div className="mt-0 lg:mt-0 lg:col-start-1 lg:col-span-2 grid grid-cols-1 lg:grid-cols-3 gap-6 max-sm:bg-white">
           <div className="p-4">
             <div className="text-black font-bold text-xl lg:text-3xl">
