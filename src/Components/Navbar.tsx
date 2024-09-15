@@ -34,7 +34,7 @@ const Navbar: React.FC<NavbarProps> = ({ brandName, brandIcon, links }) => {
 
         {/* Desktop Links Section */}
         <div className="hidden lg:flex lg:space-x-8 lg:text-sm lg:text-black lg:items-center lg:opacity-100">
-          <ul className="flex lg:flex-row text-sm text-black space-x-8"> {/* Adjust space-x-8 to control spacing */}
+          <ul className="flex lg:flex-row text-sm text-black space-x-8">
             {links.map((link, index) => (
               <li key={index}>
                 <a
