@@ -18,7 +18,7 @@ const App: React.FC = () => {
             { label: "Contact Us", href: "#contact" },
           ]}
         />
-        <div className="w-full mt-16"> 
+        <div className="w-full mt-14"> 
           <Hero />
         </div>
       </div>
