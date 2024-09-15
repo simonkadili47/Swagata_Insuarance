@@ -59,8 +59,8 @@ const Hero: React.FC = () => {
       </div>
 
       {/* Images positioned with overlap */}
-      <div className="absolute top-[calc(100%)] left-0 right-0 grid grid-cols-1 lg:grid-cols-2 gap-8 justify-center mt-20">
-        <div className="rounded-xl bg-white flex flex-col shadow-lg">
+      <div className="absolute top-[calc(100%)] left-0 right-0 grid grid-cols-2 gap-8 justify-center mt-20 max-sm:px-2 max-sm:flex max-sm:flex-col max-sm:space-y-4 max-sm:bg-custom-gray">
+        <div className="rounded-xl bg-white flex flex-col shadow-lg max-sm:border">
           <div className="p-4">
             <h2 className="font-semibold text-lg pb-2">Individuals and Family</h2>
             <p className="text-md text-gray-500 pb-6">
@@ -76,7 +76,7 @@ const Hero: React.FC = () => {
           />
         </div>
 
-        <div className="rounded-xl bg-white flex flex-col shadow-lg">
+        <div className="rounded-xl bg-white flex flex-col shadow-lg max-sm:border">
           <div className="p-4">
             <h2 className="font-semibold text-lg pb-2">Business Protection</h2>
             <p className="text-md text-gray-500 pb-6">
@@ -97,7 +97,7 @@ const Hero: React.FC = () => {
           <div className="border-t border-gray-200 w-full mx-8"></div>
         </div>
 
-        <div className="mt-4 lg:mt-6 lg:col-start-1 lg:col-span-2 grid grid-cols-1 lg:grid-cols-3 gap-6">
+        {/* <div className="mt-4 lg:mt-6 lg:col-start-1 lg:col-span-2 grid grid-cols-1 lg:grid-cols-3 gap-6">
           <div className="p-4">
             <div className="text-black font-bold text-xl lg:text-3xl">
               <p>Simpler, smarter, more</p>
@@ -122,7 +122,7 @@ const Hero: React.FC = () => {
               <p className="text-sm mt-1">You get a proactive partner to help prevent issues from happening in the first place</p>
             </div>
           </div>
-        </div>
+        </div> */}
       </div>
     </div>
   );
