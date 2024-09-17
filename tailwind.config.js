@@ -7,8 +7,17 @@ export default {
   ],
   theme: {
     extend: {
+      spacing: {
+        '190': '190px', // Add custom value
+        '526': '526px', // Add custom value
+        
+      },
       colors: {
-        'custom-gray': '#e0ebe5',  
+        'custom-gray': '#e0ebe5', 
+        'custom-green': '#296b64', 
+        'custom-orange':'#ff7455',
+        'custom-gray1': '#f7f7f7',
+        'custom-blue': '#141f1a',
       },
       keyframes: {
         fadeInDown: {
