@@ -3,7 +3,7 @@ import Navbar from "./Components/Navbar";
 import Hero from "./Components/Hero";
 import { BsUmbrella } from "react-icons/bs";
 import Choose from "./Components/Choose";
-import Protections from "./Components/protection";
+import Protections from "./Components/Protection";
 import Features from "./Components/Features";
 import Features2 from "./Components/Features2";
 import Footer from "./Components/Footer";
